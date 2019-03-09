@@ -48,6 +48,8 @@ public class StartController implements Initializable {
             chars[i] = ASCII[random.nextInt(ASCII.length)];
         }
         textKey.setText(new String(chars));
+        textKey.selectAll();
+        textKey.requestFocus();
     }
 
 }

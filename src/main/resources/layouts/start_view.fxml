@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-
 <?import java.net.URL?>
-<BorderPane maxHeight="312.0" maxWidth="396.0" minHeight="312.0" minWidth="396.0" prefHeight="312.0" prefWidth="396.0"
+
+<BorderPane maxHeight="300.0" maxWidth="396.0" minHeight="300.0" minWidth="396.0" prefHeight="300.0" prefWidth="396.0"
             xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="de.jannks.controllers.StartController">
    <stylesheets>
       <URL value="@../styles/start.css" />
    </stylesheets>
    <top>
-      <HBox prefHeight="26.0" prefWidth="547.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="26.0" prefWidth="396.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="button64" mnemonicParsing="false" text="64-bit" />
             <Button fx:id="button128" mnemonicParsing="false" text="128-bit" />
@@ -27,6 +27,6 @@
       </HBox>
    </top>
    <center>
-      <TextArea fx:id="textKey" prefHeight="375.0" prefWidth="431.0" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="textKey" prefHeight="274.0" prefWidth="396.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

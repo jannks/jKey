@@ -8,15 +8,16 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    private static final String title = "jKey";
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/layouts/start_view.fxml"));
-        primaryStage.setTitle("jKey");
-        primaryStage.setScene(new Scene(root, 386, 300));
+        final Parent root = FXMLLoader.load(getClass().getResource("/layouts/start_view.fxml"));
+        primaryStage.setTitle(title);
+        primaryStage.setScene(new Scene(root, 396, 300));
         primaryStage.setResizable(false);
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
