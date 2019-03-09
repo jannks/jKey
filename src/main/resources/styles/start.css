@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color: #212121;
+    -fx-text-fill: #eaeaea;
+}
+.root{
+    -fx-base: #212121;
+    -fx-background: #212121;
+    -fx-text-fill: #eaeaea;
+}
+
+.text-area .content {
+    -fx-background-color: #303030;
+}
+.text-area  {
+    -fx-text-fill: #eaeaea;
+}
