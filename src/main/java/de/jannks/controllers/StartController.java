@@ -10,8 +10,13 @@ import java.security.SecureRandom;
 import java.util.Random;
 import java.util.ResourceBundle;
 
+/**
+ * Start screen handles secret key generation
+ * @author Jan Kessler
+ */
 public class StartController implements Initializable {
 
+    // array with ascii chars
     private static final char[] ASCII =
             "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]}|;:,<.>/?"
             .toCharArray();
@@ -31,6 +36,7 @@ public class StartController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        // init nav buttons
         button64.setOnAction( event -> setKey(8));
         button128.setOnAction( event -> setKey(16));
         button256.setOnAction( event -> setKey(32));
@@ -42,6 +48,10 @@ public class StartController implements Initializable {
         textKey.setWrapText(true);
     }
 
+    /**
+     * Generates and display random key string
+     * @param length of the key in bytes
+     */
     private void setKey(int length) {
         final char[] chars = new char[length];
         for (int i = 0; i < length; i++) {
